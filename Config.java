@@ -23,7 +23,7 @@ public class Config {
 	public static boolean isTest = false;
 
 	public static boolean enderdragon;
-	public static boolean snowgolel;
+	public static boolean snowgolem;
 
 	/**
 	 * コンフィグファイルから読み込み
@@ -38,7 +38,7 @@ public class Config {
 		try {
 			cfg.load();
 			enderdragon = cfg.get(Configuration.CATEGORY_GENERAL, "enderdragon", true, comment1).getBoolean(true);
-			snowgolel = cfg.get(Configuration.CATEGORY_GENERAL, "snowgolel", true, comment2).getBoolean(true);
+			snowgolem = cfg.get(Configuration.CATEGORY_GENERAL, "snowgolel", true, comment2).getBoolean(true);
 		} catch (Exception e) {
 			FMLLog.log(Level.INFO, Reference.MOD_NAME + " configuration loadding failed");
 		} finally {

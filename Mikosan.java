@@ -36,7 +36,7 @@ public class Mikosan {
 	@Mod.EventHandler
 	public void modInit(FMLInitializationEvent event) {
 		// スノーゴーレム
-		if (config.snowgolel) {
+		if (config.snowgolem) {
 			addSnowGolem();
 		}
 		// エンダードラゴン
@@ -54,14 +54,5 @@ public class Mikosan {
 	private void addEnderdragon() {
 		MinecraftForge.EVENT_BUS.register(new EntityEnderdragonHook());
 	}
-
-
-	// ファイアーチャージの発射間隔の制御用（20で発射）
-	public static int attackCounterFireball = 0;
-	// 落雷の発射間隔の制御用（0で発射）※上記ファイアーチャージとカウント方法が異なるので注意
-	public static int attackCounterLightningbolt = 100;
-	// 機能しているエンダークリスタルの数（とりあえず初期値で100を格納）
-	public static int countEnderCrystal = 100;
-
 
 }

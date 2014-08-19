@@ -82,8 +82,7 @@ public class EntityEnderdragonHook {
 				}
 
 				++attackCounterFireball;
-				// FMLLog.info("attackCounterFireball: " +
-				// attackCounterFireball);
+				// FMLLog.info("attackCounterFireball: "+attackCounterFireball);
 
 				if (attackCounterFireball >= 60)
 				{
@@ -164,7 +163,7 @@ public class EntityEnderdragonHook {
 				entitybolt.setLocationAndAngles(x, y - 1, z, 0, 0.0F);
 				dragon.worldObj.addWeatherEffect(entitybolt);
 
-				boolean blnGriefing = dragon.worldObj.getGameRules().getGameRuleBooleanValue("mobGriefing");
+				// boolean blnGriefing = dragon.worldObj.getGameRules().getGameRuleBooleanValue("mobGriefing");
 				// こちらのcreateExplosion()はプレイヤーへのダメージ用。落雷でゲージ2.5個、爆発でゲージ2.5個分くらい削り取る。
 				dragon.worldObj.createExplosion(dragon, x, y, z, 0.1F, true);
 				// createExplosion()の第１引数をplayer2にすると、パーティクル表示は派手でもプレイヤーへのダメージはゼロになる。

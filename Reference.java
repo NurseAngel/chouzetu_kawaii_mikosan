@@ -9,6 +9,4 @@ public class Reference
 	public static final String SERVER_PROXY_CLASS = "com.github.nurseangel.chouzetu_kawaii_mikosan.proxy.CommonProxy";
 	public static final String CLIENT_PROXY_CLASS = "com.github.nurseangel.chouzetu_kawaii_mikosan.proxy.ClientProxy";
 
-	public static final String TEXTURE_PATH = "coloredstainedglass:";
-
 }
